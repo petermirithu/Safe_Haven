@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Safe Haven</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.2/dist/pulse/bootstrap.min.css">
+    <style>
+      
+      .container {
+          height: 100vh;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-top: 0%;
+      }
+      
+
+      .form-container img {
+          height: 80%;
+          width: 80%;
+          object-fit: cover; /* Maintain aspect ratio */
+      }
+      
+      .form-container .form-group:last-child {
+          margin-bottom: 10px; 
+          
+      }
+      .btn-primary {
+          margin-top: 10px; /* Add margin to the submit button */
+      }
+
+      
+  </style>
+</head>
+
+<body>
+  <!-- Navbar to help in Navigating from one Page to another -->
+  <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">Safe Haven 😊</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01"
+            aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarColor01">
+            <ul class="navbar-nav me-auto">
+                <!-- Link to take you to home page -->
+                <li class="nav-item">
+                    <a class="nav-link active" href="index.html">Home
+                        <span class="visually-hidden">(current)</span>
+                    </a>
+                </li>
+                <!-- Link to take you to about us page -->
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <!-- Link to take you to Contact us page -->
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact Us</a>
+                </li>
+            </ul>                
+        </div>
+    </div>
+</nav>
+  <div class="container">
+      <div class="row form-container">
+          <div class="col-md-6">
+              <!-- Form Column -->
+              <form action="submit.php" method="post">
+                  <fieldset>
+                      <legend>Feel free to talk to us</legend>
+                      <!-- Email Field -->
+
+                      <div class="form-group">
+                          <label for="exampleInputEmail1" class="form-label">Email address</label>
+                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" required>
+                          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                      </div>
+                      <!-- Name Field -->
+
+                      <div class="form-group">
+                          <label for="name" class="form-label">Name</label>
+                          <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required>
+                      </div>
+                      <!-- Message Field -->
+
+                      <div class="form-group">
+                          <label for="message" class="form-label">Message</label>
+                          <textarea class="form-control" id="message" name="message" rows="4" placeholder="Your Message" required></textarea>
+                      </div>
+
+                      <input type="submit" value="Submit" class="btn btn-primary">
+                  </fieldset>
+              </form>
+          </div>
+          <div class="col-md-6">
+              <!-- Image Column -->
+              <img src="image/contact.jpg" alt="Image">
+          </div>
+      </div>
+  </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+
+</html>
+
